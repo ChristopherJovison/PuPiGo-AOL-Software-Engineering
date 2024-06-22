@@ -27,7 +27,10 @@ async function fetchRides() {
     // const data = querySnapshot[0].data()
 
     if (querySnapshot.empty) {
-        container.innerHTML = '<h2>You have no rides</h2>';
+        container.innerHTML = `
+        
+        <img src="img/Confused-kid-noride.png" alt="" class="center-image">
+        `;
     } else {
         querySnapshot.forEach((doc) => {
             const ride = doc.data();

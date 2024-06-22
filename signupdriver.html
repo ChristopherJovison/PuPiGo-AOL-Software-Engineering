@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Split Screen Website</title>
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script> -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" /> -->
+  <link rel="stylesheet" href="css/signupdriver.css">
+</head>
+<body>
+  <div class="split left">
+    <div class="left-content">
+      <h1 class="title" style="text-align: right;">Register Now</h1>
+      <h2 class="header" style="text-align: right;">Enter your personal details and start journey with us !</h2>
+      <img src="img/driver.png" alt="Image">
+    </div>
+  </div>
+
+  <div class="split right">
+    <!-- Right side -->
+
+    
+    <div class="splitright">
+
+      <div class ="titlee">
+        <a href="home.html">
+        <img src="img/Logo.png" alt="Image">
+        </a>
+      </div>
+
+
+      <div class ="titlee">
+        <h2>General Information</h2>
+      </div>
+
+      <form id="signUpDriver">
+      <div class="container general-information">
+        <!-- content here -->
+
+        <div class="grid-container">
+          
+          <input id="fullName" type="text" placeholder="Legal Name" class="item1" required>
+          <input id="phone" type="number" placeholder="Phone Number" class="item2" required>
+          <input id="driverEmail" type="text" placeholder="Email Address" class="item3" required>
+
+          <div class="item4">
+            <h3>Upload Self Portrait</h3>
+            <input id="self-portrait" type="file" placeholder="here" onchange="" accept="image/png, image/jpeg"/>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class ="titlee">
+       <h2>Details</h2>
+      </div>
+
+      <div class="container details">
+
+        <!-- content here -->
+        <div class="grid-details">
+          
+          <div class="item5">
+            <h3>Upload an Image of your car</h3>
+            <input type="file" placeholder="here">
+          </div>
+
+          <div class="item6">
+            <h3>Upload Driver's License</h3>
+            <input type="file" placeholder="here">
+          </div>
+
+          <input id="expiration-date" type="text" placeholder="Expiration Date" class="item7" onfocus="(this.type='date')"
+          onblur="(this.type='text')" required>
+          <input id="address" type="text" placeholder="Address" class="item8">
+          <input id="postal-code" type="number" placeholder="Postal Code" class="item9">
+          
+          <input id="typeOfCar" list="TypeofCar" name="TypeofCar" class="item10" placeholder="Type of Car">
+            <datalist id="TypeofCar">
+              <option value="Toyota">Toyota</option>
+              <option value="Suzuki">Suzuki</option>
+              <option value="Honda">Honda</option>
+              <option value="Daihatsu">Daihatsu</option>
+              <option value="Mitsubishi">Mitsubishi</option>
+              <option value="BMW">BMW</option>
+              <option value="Wuling">Wuling</option>
+              <option value="Chery">Chery</option>
+              <option value="Mercedes">Mercedes</option>
+              <option value="Ferrari">Ferrari</option>
+              <option value="Hyundai">Hyundai</option>
+            </datalist>
+
+          <input id="domicile" type="text" name="Domicile" class="item11" placeholder="Domicile" required>
+            <!-- <datalist id="Domicile">
+              <option value="Jakarta">
+              <option value="Surabaya">
+              <option value="London">
+              <option value="Malang">
+              <option value="Balik Papan">
+            </datalist> -->
+        
+        </div>
+      </div>
+
+      <div class ="titlee">
+        <h2>Password</h2>
+      </div>
+
+      <div class="container password">
+
+        <!-- content here -->
+        <div class="grid-password">
+          <input id="password" type="password" placeholder="Create Password" class="item12">
+          
+
+          <div class="item14">
+            <button id="submit-driver" type="button" class="item14">Confirm</button>
+          </div>
+
+        </div>
+
+      </div>
+
+      </form>
+    
+    </div>
+
+
+  </div>
+  <script type="module" src="js/signupdriver.js"></script>
+</body>
+</html>

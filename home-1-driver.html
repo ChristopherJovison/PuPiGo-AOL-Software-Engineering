@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project PuPiGo</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/home.js"></script>
+</head>
+<body>
+
+    <nav class="dark:bg-transparent fixed w-full z-20 top-0 start-0">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="home.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="img/Logo.png" class="h-12" alt="Flowbite Logo">
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <img id="avatarButton" type="button" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-start" class="w-10 h-10 rounded-full cursor-pointer" src="img/profile.jpg" alt="User dropdown">
+                <div id="userDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                    <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
+                        <div id="profile-name"></div>
+                        <div id="profile-email" class="font-medium truncate"></div>
+                    </div>
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="avatarButton">
+                        <li>
+                            <a href="#" class="block px-4 py-2 dark:hover:bg-gray-600 dark:hover:text-white">Driver</a>
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="py-1">
+                        <a id="logout" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                    </div>
+                </div>
+                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#home" class="block py-2 px-3 custom-text-color rounded md:bg-transparent md:custom-text-color md:p-0 md:dark:custom-text-color custom-text-color" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#pricelist" class="block py-2 px-3 text-gray-900 custom-text-color-hover rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:custom-text-color-hover md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 custom-text-color-hover">Price List</a>
+                    </li>
+                    <li>
+                        <a href="booking-1.html" class="block py-2 px-3 text-gray-900 custom-text-color-hover rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:custom-text-color-hover md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 custom-text-color-hover">Book</a>
+                    </li>
+                    <li>
+                        <a href="driver-home.html" class="block py-2 px-3 text-gray-900 custom-text-color-hover rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:custom-text-color-hover md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 custom-text-color-hover">My Rides</a>
+                    </li>
+                    <li>
+                        <a href="#About" class="block py-2 px-3 text-gray-900 custom-text-color-hover rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:custom-text-color-hover md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 custom-text-color-hover">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+      
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+
+    <div class="bg-image">
+        <img src="img/PuPiGo-02.png" alt="Image" class="responsive-image">
+    </div>
+
+    <div class="desc">
+        <div class="content">
+            <div class="desc-section">
+                <img src="img/Kids-01-removebg-preview.png" alt="Image" class="image">
+                <!-- <h2>Section 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+            </div>
+            <div id="About" class="desc-section">
+                <p class="what-is">
+                    What is PuPiGo?
+                </p>
+                <br>
+                <p class="">
+                    PuPiGo is a website that provides shuttle services for school children. PuPiGo becomes an intermediary between customers and drivers so that transactions and relationships can run more systematically, more regularly, and more easily.
+            </div>
+        </div>
+            
+    </div>
+
+    <div class="why">
+        <h2 class="why-title">Why PuPiGo?</h2>
+        <div class="content-02">
+            <div class="section">
+                <div class="why-image-1">
+                    <!-- <img src="icon 1 (1).png" alt=""> -->
+                    <img src="img/icon 1 (1).png" alt="">
+                </div>
+                <div class="why-desc">
+                    <h2>Protection</h2>
+                    <p>Door-to-door service with a comfortable and safe vehicle.</p>
+                </div>
+                
+            </div>
+            <div class="section">
+                <div class="why-image-2">
+                    <img src="img/icon 1 (2).png" alt="">
+                </div>
+                <div class="why-desc">
+                    <h2>Supervision</h2>
+                <p>Drivers who have undergone rigorous selection and training on safety and safe driving behavior.</p>
+                </div>
+                
+            </div>
+            <div class="section">
+                <div class="why-image-3">
+
+                    <img src="img/icon 1 (3).png" alt="">
+                </div>
+                <div class="why-desc">
+                    <h2>Cost Efficient</h2>
+                <p>Offer convenient child pick-up and drop-off at affordable prices</p>
+                </div>
+                
+            </div>
+        </div>
+
+        </div>
+
+    <div  class="client-says">
+        <div class="title-client">
+            What Other Drivers Say About Our App
+        </div>
+        <br>
+        <div class="content-03">
+
+            <div class="quotes">
+                <blockquote class="text-xl italic font-semibold text-gray-900 dark:text-white">
+                    <svg class="w-8 h-8 text-gray-400 dark:text-gray-600 mb-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                        <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+                    </svg>
+                    <p>This app is excellent! It saves us the hassle of finding clients in schools. Highly recommended for shuttle businesses.</p>
+                    <div class="stars">
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </blockquote>
+            </div>
+
+            <div class="image-client">
+                <img src="img/driver-review.png" alt="">
+            </div>
+            
+        </div>
+        
+        
+        
+    </div>
+    
+    
+
+    <div class="form">
+        <div class="mail-box">
+            <!-- <p>sssssssssssxxxxss</p> -->
+            <img src="img/bg-removes-kid-excited.png" alt="">
+            
+            <div class="input">
+
+                <form class="max-w-sm mx-auto">
+                    <div class="title-satisfaction">
+                        <label for="message" class="satis">Your Satisfaction is Our Priority</label>
+                        <h1>Help us improve</h1>
+                    </div>
+                        
+                        <!-- <br> -->
+                        
+                        <br>
+                        <div class="textbox">
+                            <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..."></textarea>
+                        </div>
+                        <br>
+                        <button type="button" class="text-white custom-green-btn hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800">Send</button>
+    
+                </form>
+            </div>
+            
+        </div>
+
+    </div>
+
+    
+
+    <footer class="bg-white dark:bg-gray-900">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+              <div class="mb-6 md:mb-0">
+                  <a href="{{< param homepage >}}/" class="flex items-center">
+                      <img src="img/Logo.png" class="h-10 me-2" alt="FlowBite Logo" />
+                      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
+                  </a>
+              </div>
+              <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                  <div>
+                      <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Booking</h2>
+                      <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                          <li class="mb-4">
+                              <a href="{{< param homepage >}}/" class="hover:underline">PuPiGo</a>
+                          </li>
+                          <li>
+                              <a href="https://tailwindcss.com/" class="hover:underline">Price List</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div>
+                      <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                      <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                          <li class="mb-4">
+                              <a href="https://www.instagram.com/iniecle/" class="hover:underline ">Instagram</a>
+                          </li>
+                          <li>
+                              <a href="https://www.tiktok.com/@ekzelll" class="hover:underline">TikTok</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div>
+                      <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                      <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                          <li class="mb-4">
+                              <a href="#" class="hover:underline">Privacy Policy</a>
+                          </li>
+                          <li>
+                              <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+          <div class="sm:flex sm:items-center sm:justify-center">
+              <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="{{< param homepage >}}/" class="hover:underline">PuPiGo</a>. All Rights Reserved.
+              </span>
+          </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,424 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    /* background-image: url("PuPiGo-02.png"); */
+    background-color: #DEF2F1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.custom-green-btn {
+    background-color: #2B7A78; /* Custom green button color */
+}
+
+.custom-color-bar{
+    background-color: #3AAFA9;
+}
+
+.custom-text-color {
+    color: #2B7A78; /* Custom text color */
+}
+
+.custom-text-color-hover:hover {
+    color:#2B7A78; /* Custom text color on hover */
+}
+
+.custom-text-bg-color-hover:hover {
+    background-color: #456789; /* Custom hover color for About, Services, and Contact */
+}
+
+/* body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.container-04 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+}
+
+.container-04-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red;  */
+    width: 100%;
+    height: 100%;
+}
+
+.white-box {
+    width: 80%; /* Set width as a percentage */
+    /* max-width: 600px;  */
+    height: 100%;
+    background-color: white;
+    /* border: 2px solid black; */
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 60px; /* Adjust for vertical centering */
+}
+
+.white-box-4 {
+    width: 80%; /* Set width as a percentage */
+    /* max-width: 600px;  */
+    height: 2000px;
+    background-color: white;
+    /* border: 2px solid black; */
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 60px; /* Adjust for vertical centering */
+}
+
+.container-04-Jr{
+    padding: 20px;
+    justify-content:left;
+    /* background-color: rebeccapurple; */
+    text-align: left;
+    
+    /* background-color: red; */
+}
+
+.day-counter{
+    background-color: red;
+}
+
+.driverlist{
+    background-color: red;
+    display: flex;
+    justify-content: space-around; /* Align sections with space around */
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+
+.Title-01{
+    font-size: 20px;
+    font-weight: 50px;
+}
+
+.button-1{
+    float: right;
+    padding-right: 15px;
+    /* padding-top: 80px; */
+    /* background-color: red; */
+}
+
+.button-2{
+    float: right;
+    padding-right: 15px;
+    padding-top: 90px;
+    /* background-color: red; */
+}
+
+.dropdown-school{
+    /* width: 100%; */
+    /* background-color: red; */
+    float: left;
+
+}
+
+.custom-width {
+    /* width: 200%;  */
+    /* Set your desired width */
+}
+
+@media (max-width: 100px) {
+    .custom-width {
+        width: 100%; /* Make it responsive for smaller screens */
+    }
+}
+
+.centang-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column; 
+}
+
+.centang-img, .desc-centang{
+    margin-top: 1rem;
+}
+
+.desc-centang{
+    line-height: 35px;
+}
+
+.desc-centang-1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.boxes-driver-1{
+    padding: 0;
+    margin: 0;
+}
+
+/* .box-text-driver{
+    font-size: 10px;
+} */
+
+.section-01 {
+    width: 30%; /* Adjust section width as needed */
+    padding: 20px;
+    /* background-color: red; */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+}
+
+.driver-details-01{
+    padding-left: 10px;
+}
+
+.driver-details-01 p {
+    margin: -10px 0; /* Adjust the top and bottom margin to decrease spacing */
+}
+
+.driver-details-01-name{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.driver-box-1-01 {
+    /* width: 30%;  */
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 100%;
+    /* background-color: red; */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    font-style: italic;
+    padding: 0;
+    padding-left: 10px;
+    /* margin-left: 30px; */
+    /* background-color: yellow; */
+}
+
+.boxes-driver-1 h2{
+    font-size: 15px;
+}
+
+.driver-box-1 p{
+    font-size: 15px;
+    /* margin-top: 1px; */
+    padding-left: 20px;
+    margin-bottom: 1px;
+}
+
+.image-driver{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    /* background-color: red; */
+}
+
+.button-driver{
+    padding: 20px;
+}
+
+.stars{
+    padding: 20px;
+}
+
+.driver-box-1{
+    /* background-color: red; */
+    display: flex;
+    /* justify-content: flex-end; */
+}
+
+.total-price{
+    /* background-color: red; */
+    /* width: 40%; */
+    display: flex;
+            justify-content: center;
+}
+
+.mini-total-price{
+    background-color: #C8EBE9;
+    border-radius:  10px;
+    width: 95%;
+    /* height: 50px; */
+    /* padding-top: ; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.payment-method{
+    /* align-items: center;
+    justify-content: center; */
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: blue; */
+    /* width: %; */
+    
+}
+
+.saved-card{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.payment-container{
+    display: flex;
+    justify-content: center;
+    /* width: 50%; */
+    /* background-color: blue; */
+}
+
+.order-details{
+    width: 30%;
+    /* margin: 50px; */
+    margin-left: 70px;
+    /* background-color: red; */
+    padding-right: 50px;
+}
+
+.detail-box{
+    width: 100%;
+    height: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.form-payment{
+    /* background-color: red; */
+    padding: 10px;
+    margin: 20px;
+}
+
+.outer-form-payment{
+    /* background-color: rebeccapurple; */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+
+.custom-buttons-payment{
+    width: 30%;
+}
+
+.order-details-info{
+    display: flex;
+    justify-content: center;
+}
+
+.route-details{
+    width: 50%;
+}
+
+.packet-details{
+    width: 50%;
+    /* background-color: red; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+}
+
+.driver-details{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.driver-profile{
+    width: 20%;
+
+}
+
+.driver-name{
+    width: 80%;
+    text-align: left;
+}
+
+.detail-box{
+    height: 700px;
+}
+
+.total-price-details{
+    /* background-color: red; */
+    padding-top: 200px;
+    
+}
+
+.total-price-details-1{
+    /* background-color: red; */
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.confirmed {
+    color: green;
+}
+
+/* New styles for Flexbox layout */
+.boxes-3 {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    /* background-color: red; */
+    display: grid;
+            grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Adjust the gap between boxes as needed */
+}
+
+.driver-box-1 {
+    flex: 1 1 calc(33.333% - 20px); 
+    /* Three boxes per row with gap */
+    box-sizing: border-box;
+    /* background-color: blue; */
+}
+
+.package-selection {
+    /* margin-bottom: 20px; */
+}
+
+.package-selection label {
+    display: block;
+    font-size: 15px;
+    /* font-weight: bold; */
+    margin-bottom: 5px;
+}
+
+.package-selection select {
+    width: 100%;
+    padding: 10px;
+    /* font-size: 14px; */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.scroll-shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    /* color: white; */
+    /* opacity: 0.2; */
+}

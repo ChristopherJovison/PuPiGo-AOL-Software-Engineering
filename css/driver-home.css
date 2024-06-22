@@ -1,0 +1,508 @@
+/* styles.css */
+
+.custom-green-btn {
+    background-color: #2B7A78; /* Custom green button color */
+}
+
+.custom-text-color {
+    color: #2B7A78; /* Custom text color */
+}
+
+.custom-text-color-hover:hover {
+    color:#2B7A78; /* Custom text color on hover */
+}
+
+.custom-text-bg-color-hover:hover {
+    background-color: #456789; /* Custom hover color for About, Services, and Contact */
+}
+
+body{
+    /* background-image: url("PuPiGo-02.png"); */
+    background-color: #DEF2F1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-image{
+    height: 400px;
+    background-image: url("PuPiGo-02.png");
+    background-color: #DEF2F1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    height: fit-content;
+    max-width: 100%;
+}
+
+.responsive-image {
+    width: 100%; /* Set the image width to 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image is a block element */
+}
+
+
+#main-content {
+    min-height: 100vh;
+}
+
+
+.desc {
+    background-color: white;
+    width: 100%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    height: 400px;
+    /* padding: 20px; */
+}
+
+.content {
+    display: flex;
+    /* flex-direction: ; */
+    align-items: center;
+
+}
+
+.what-is{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 35px;
+}
+
+
+
+.desc-section {
+    width: 400px; /* Adjust image width as needed */
+    margin-right: 20px; /* Add spacing between image and text */
+}
+
+.why {
+    
+    justify-content: space-around; /* Align sections with space around */
+    max-width: 100%;
+    
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-02{
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    /* margin: 0 auto;
+    padding: 20px; */
+}
+
+.why-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.section {
+    width: 30%; /* Adjust section width as needed */
+    padding: 20px;
+    /* background-color:red; */
+    /* border-radius: 8px; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    /* justify-content: center; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.client-says{
+    background-color: white;
+    
+}
+
+.content-03{
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    /* background-color: red; */
+    background-color: white;
+}
+
+.title-client{
+    font-size: 30px;
+    padding-top: 50px;
+    padding-left: 10%;
+    font-weight: bold;
+
+}
+
+.image-client{
+    width: 500px;
+    padding-right: 10%;
+}
+
+.stars{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    /* background-color: blue; */
+}
+
+.title{
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    font-size: 40px;
+    font-weight: bold
+
+}
+.pricelist-content {
+    display: flex;
+    justify-content: space-around; /* Align sections with space around */
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.section-01 {
+    width: 30%; /* Adjust section width as needed */
+    padding: 20px;
+    /* background-color: red; */
+    background-color: #DEF2F1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    font-style: italic;
+}
+
+.section-01 h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    
+}
+
+.section-01 p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.price-desc{
+    padding: 10px;
+    color: #456789;
+}
+
+.form{
+    background-color: white;
+    padding: 30px;
+}
+
+.mail-box{
+    width: 110%;
+    height: 300px;
+    background-color: #DEF2F1;
+    border-radius: 200px; /* Adjust the value to change the roundness */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    transform: translate(-150px, 20px);
+    display: flex;
+}
+
+.mail-box img{
+    padding-left: 100px;
+    padding-top: 20px;
+    width: 400px;
+    /* background-color: blue; */
+}
+
+.input{
+    /* background-color: red; */
+    justify-content: left;
+    padding-left: 0px;
+}
+
+
+
+.satis {
+    font-size: larger;
+    font-weight: bold;
+    /* background-color: red; */
+}
+
+.textbox{
+    width: 100%;
+}
+
+.why-image-1{
+    width: 90px;
+    /* background-color: blue; */
+    
+}
+
+.why-image-2{
+    width: 100px;
+    /* background-color: blue; */
+    padding-bottom: 20px;
+    
+}
+
+.why-image-3{
+    width: 70px;
+    /* background-color: blue; */
+    
+}
+
+
+.container {
+    /* width: 66%; */
+    /* height: 66%; */
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+  }
+  
+  .flex-container {
+    width: 100%;
+    height: 100%; /* fixed height */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* background-color: red; *//
+    /* background-color: #ffffff; */
+    border-radius: 10px;
+    padding: 30px;
+    gap: 20px;
+  }
+
+
+  /* flexbox */
+.flextitle{
+    margin: 20px;
+
+}
+
+.flextitle h1{
+    font-weight: 650;
+    font-size: 25px ;
+}
+
+.flexrow {
+    display: flex;
+    width: 100%;
+    /* background-color: red; */
+    height: 125px;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.flexlogo {
+    width: 125px;
+    height: 125px;
+    display:flex;
+}
+
+
+/* LOGO */
+.fleximg{
+    width: 100%;
+    height: 100%;
+    
+    align-content: center;
+   justify-content: center;
+   display:flex;
+   flex-wrap: wrap;
+
+}
+
+.flexlogo img{
+    width: 90px;
+    height: 90px;
+}
+
+
+
+
+.flexwhite {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+
+}
+
+/* grid */
+
+.griditem1 { grid-area: one; }
+.griditem2 { grid-area: two; }
+.griditem3 { grid-area: three; }
+.griditem4 { grid-area: four; }
+.griditem5 { grid-area: five; }
+.griditem6 { grid-area: six; }
+
+.gridbox {
+    display: grid;
+    grid-template-areas:
+    'one two three four five six';
+    gap: 10px;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    /* background-color: #00000000; */
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.griditem6 button {
+    font-size: 15px; 
+    padding: 1px 20px; 
+    background-color: #3AAFA9; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+    height: 30px;
+    width: 90px;
+    
+  }
+
+  .griditem6 h2{
+    padding-top: 45px;
+    text-decoration: underline;
+    cursor: pointer; 
+  }
+
+
+  .griditem6{
+    padding: 5px;
+  }
+
+
+
+
+
+
+
+
+
+.flexdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    /* flex: 1; */
+}
+
+.flexdown h2{
+    font-size: 15px;
+}
+
+.blue{
+ color:rgb(50, 189, 189);
+}
+
+.red{
+    color:red;
+   }
+.flexdown > .bold{
+    font-weight: 650;
+}
+
+.flexdown img{
+    width: 40px;
+    height: 40px;
+}
+
+.show-popup{
+    background: none; /* Remove default button background */
+    border: none; /* Remove default button border */
+    /* color: #3AAFA9;  */
+    text-decoration: underline; /* Underline the text */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: inherit; /* Keep font size consistent with surrounding text */
+    font-family: inherit; /* Keep font family consistent with surrounding text */
+    padding: 0; /* Remove default button padding */
+    outline: none; /* Remove default focus outline */
+    margin-top: 30px;
+}
+
+.show-popup:hover {
+    text-decoration: none; /* Optionally remove underline on hover */
+}
+
+.show-popup:focus {
+    outline: none; /* Remove default focus outline */
+}
+
+.popup-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2B7A78;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.popup-container .popup-box{
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.popup-container.active{
+    opacity: 1;
+}
+
+.popup-box .close-button{
+    width: 100%;
+    height: 45px;
+    background-color: #3AAFA9;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.rating-ride{
+    margin-top: 30px;
+    text-decoration: underline;
+}
+.flex-container{
+    height: 500px;
+}
+.center-image {
+    display: block; /* Ensure it's a block-level element */
+    margin: 0 auto; /* Center horizontally */
+    
+}
+

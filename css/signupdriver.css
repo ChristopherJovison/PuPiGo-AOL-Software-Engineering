@@ -1,0 +1,242 @@
+/* Split the screen in half */
+.split {
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+    width: 33.33%;
+    background-color: #2B7A78;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+    width: 66.67%;
+    background-color: #D1EEE9;
+  }
+  
+  /* Add some styling to the left content */
+  .left-content {
+    text-align: right;
+    padding-right: 50px;
+    padding-left: 30px;
+    color: #ffffff;
+  }
+  
+  .left-content .title {
+    font-size: 60px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .left-content .header {
+    font-size: 14px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .left-content img {
+    width: 80%;
+    height:80%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: scale-down;
+    border-radius: 10px;
+    padding-right: 20px;
+  }
+
+.right {
+  text-align: left;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.right h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #90C0BC;
+  text-align: left;
+}
+
+.container {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.titlee {
+  width: 100%;
+  padding-left: 20px;
+  /* margin-bottom: 20px; */
+}
+.titlee img {
+  height: 50px;
+}
+
+.form {
+  /* display: inline-flex */
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.splitright {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+/* grid 1*/
+
+.item1 { grid-area: one; }
+.item2 { grid-area: two; }
+.item3 { grid-area: three; }
+.item4 { grid-area: right; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'one right'
+    'two right'
+    'three right';
+  gap: 10px;
+  background-color: #00000000;
+  padding: 10px;
+
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 2);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border: 1px solid #0000008f;
+}
+
+.item4 h3 {
+  font-size: 20px;
+  color: #0000003f;
+  text-align: center;
+}
+
+.item4 input[type="file"] {
+  display: block;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/* second grid */
+
+.item5 { grid-area: five; }
+.item6 { grid-area: six; }
+.item7 { grid-area: seven; }
+.item8 { grid-area: eight; }
+.item9 { grid-area: nine; }
+.item10 { grid-area: ten; }
+.item11 { grid-area: eleven; }
+
+
+.grid-details {
+  display: grid;
+  grid-template-areas:
+    'five five six six'
+    'five five six six'
+    'five five six six'
+    'five five six six'
+    'ten ten seven seven'
+    'eleven eleven eight nine';
+  gap: 10px;
+  background-color: #00000000;
+  padding: 10px;
+}
+
+.item5 h3 {
+  font-size: 20px;
+  color: #0000003f;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.item5 input[type="file"] {
+  display: block;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 100%;
+}
+
+.grid-details > div {
+  background-color: rgba(255, 255, 255, 2);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border: 1px solid #0000008f;
+}
+
+.item6 h3 {
+  font-size: 20px;
+  color: #0000003f;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.item6 input[type="file"] {
+  display: block;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/* third grid */
+
+
+.item12 { grid-area: twelve; }
+.item13 { grid-area: thirteen; }
+.item14 { grid-area: fourteen; }
+
+
+.grid-password {
+  display: grid;
+  grid-template-areas:
+    'twelve fourteen'
+    'thirteen fourteen';
+  gap: 10px;
+  background-color: #00000000;
+  padding: 10px;
+}
+
+/* button confirm */
+
+.item14 {
+  text-align: center; 
+}
+
+.item14 button {
+  font-size: 24px; 
+  padding: 10px 20px; 
+  background-color: #3AAFA9; 
+  color: #fff; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}

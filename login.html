@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/loginstyle.css">
+    <title>Login PuPiGo</title>
+    <script type="module" src="./js/firebaseauth.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container sign-in">
+            <form id="login-form">
+                <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+                <a href="home.html"><img src="./img/Logo.png" alt="PuPiGo Logo" class="logo"></a>
+                <h1>Sign In</h1>
+                <input type="email" placeholder="Email" id="email" required>
+                <input type="password" placeholder="Password" id="password" required>
+                <button class="btn" id="submit-login">Sign In</button>
+                <a id="forgot-password" href="#">Forget Your Password?</a>
+                <p>Don't have an account? <a href="register.html">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

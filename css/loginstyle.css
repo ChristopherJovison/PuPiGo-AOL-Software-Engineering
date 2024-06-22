@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #DEF2E8;
+    background: linear-gradient(to right, #DEF2E8, #3AAFA9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #FEFFFF;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    width: 400px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .logo {
+    width: 125px; /* Adjust the size as needed */
+    height: auto;
+    margin-bottom: 8px; /* Space between the logo and the title */
+}
+
+.container input {
+    background-color: #eee;
+    border: none;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.container button {
+    background-color: #3AAFA9;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px; /* Sesuaikan jika diperlukan */
+}
+
+.container a {
+    color: #3AAFA9;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.container p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.messageDiv{
+    background-color:hsl(0, 94%, 52%);
+    color:white;
+    padding:10px 20px;
+    margin:10px;
+    border-radius: 5px;
+    font-size:1rem;
+    opacity:0;
+    animation:fadeOut 7s forwards;
+
+}

@@ -1,0 +1,348 @@
+/* styles.css */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.custom-green-btn {
+    background-color: #2B7A78; /* Custom green button color */
+}
+
+.custom-text-color {
+    color: #2B7A78; /* Custom text color */
+}
+
+.custom-text-color-hover:hover {
+    color:#2B7A78; /* Custom text color on hover */
+}
+
+.custom-text-bg-color-hover:hover {
+    background-color: #456789; /* Custom hover color for About, Services, and Contact */
+}
+
+body{
+    /* background-image: url("PuPiGo-02.png"); */
+    background-color: #DEF2F1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-image{
+    height: 400px;
+    background-image: url("PuPiGo-02.png");
+    background-color: #DEF2F1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    height: fit-content;
+    max-width: 100%;
+}
+
+.responsive-image {
+    width: 100%; /* Set the image width to 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image is a block element */
+}
+
+
+#main-content {
+    min-height: 100vh;
+}
+
+
+.desc {
+    background-color: white;
+    width: 100%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    height: 400px;
+    /* padding: 20px; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Optional: if you want the content to be stacked vertically */
+    /* height: 100vh; Full height of the viewport */
+    
+}
+
+.content {
+    display: flex;
+    flex-direction: ;
+    align-items: center;
+
+}
+
+.what-is{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 35px;
+}
+
+
+
+.desc-section {
+    width: 400px; /* Adjust image width as needed */
+    margin-right: 20px; /* Add spacing between image and text */
+    align-items: center;
+    /* background-color:blue; */
+}
+
+.why {
+    
+    justify-content: space-around; /* Align sections with space around */
+    max-width: 100%;
+    background-color: ;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.why-title{
+    /* background-color: red; */
+    padding-top: 50px;
+    font-size: 40px;
+}
+
+.why-desc{
+    /* background-color: red; */
+    width: 70%;
+}
+.content-02{
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    padding: 50px;
+    margin: 30px;
+    /* margin: 0 auto;
+    padding: 20px; */
+}
+
+.why-title{
+    text-align: center;
+    /* font-size: 30px; */
+    font-weight: bold;
+    font-style: italic;
+}
+
+.section {
+    width: 30%; /* Adjust section width as needed */
+    padding: 20px;
+    /* background-color:red; */
+    /* border-radius: 8px; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    /* justify-content: center; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.client-says{
+    background-color: white;
+    
+}
+
+.content-03{
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    /* background-color: red; */
+    background-color: white;
+    padding-bottom: 100px;
+    /* background-color: yellow; */
+    
+}
+
+.title-client{
+    font-size: 30px;
+    padding-top: 50px;
+    padding-left: 10%;
+    font-weight: bold;
+    /* background-color: red; */
+
+}
+
+
+
+.quotes{
+    /* background-color: blue; */
+    padding-left: 40px;
+    width: 70%;
+}
+
+.image-client{
+    width: 500px;
+    padding-right: 10%;
+}
+
+.stars{
+    padding-top: 30px;
+    /* padding-bottom: 10px; */
+    /* background-color: blue; */
+}
+
+.title{
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    font-size: 40px;
+    font-weight: bold
+
+}
+.pricelist-content {
+    display: flex;
+    justify-content: space-around; /* Align sections with space around */
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+.day-counter{
+    justify-content: left;
+    background-color: red;
+}
+
+.section-01 {
+    width: 30%; /* Adjust section width as needed */
+    padding: 20px;
+    /* background-color: red; */
+    background-color: #DEF2F1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    font-style: italic;
+}
+
+.section-01 h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    
+}
+
+.section-01 p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.price-desc{
+    padding: 10px;
+    color: #456789;
+}
+
+.form{
+    background-color: white;
+    padding: 30px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    /* background-color: red; */
+}
+
+.mail-box{
+    width: 110%;
+    height: 300px;
+    background-color: #DEF2F1;
+    border-radius: 200px; /* Adjust the value to change the roundness */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    transform: translate(-150px, 20px);
+    display: flex;
+}
+
+.mail-box img{
+    padding-left: 100px;
+    padding-top: 20px;
+    width: 400px;
+    /* background-color: blue; */
+}
+
+.input{
+    /* background-color: red; */
+    justify-content: left;
+    padding-left: 0px;
+}
+
+
+.mail-box-02-content{
+
+}
+
+.satis {
+    font-size: larger;
+    font-weight: bold;
+    /* background-color: red; */
+}
+
+.textbox{
+    width: 100%;
+}
+
+.why-image-1{
+    width: 90px;
+    /* background-color: blue; */
+    
+}
+
+.why-image-2{
+    width: 100px;
+    /* background-color: blue; */
+    padding-bottom: 20px;
+    
+}
+
+.why-image-3{
+    width: 70px;
+    /* background-color: blue; */
+    
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    #navbar-default {
+        display: flex !important;
+    }
+
+    #showMenu {
+        display: none;
+    }
+
+    .hidden.md\:block {
+        display: block !important;
+    }
+}
+.loggedIn-profile{
+    /* background-color: red; */
+}
+
+.whole-nav{
+    /* background-color: blue; */
+}
+
+.right-buttons {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+}
+
+.scroll-shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    /* color: white; */
+    /* opacity: 0.2; */
+}
